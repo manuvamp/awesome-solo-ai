@@ -6,7 +6,7 @@
 
 **A solo AI stack is the set of tools, Claude skills, MCP servers, and playbooks a one-person business uses to build, ship, and grow a product — making video, voice, images, code, automations, and distribution without hiring a team.** This list curates that stack: every entry is verified, dead links are pruned, and the whole thing is published as [`llms.txt`](https://github.com/yerdaulet-damir/awesome-solo-ai/blob/main/llms.txt) so your AI agent can read it and call any tool here.
 
-_Last updated: September 2026 · Curated by a working solo builder, not auto-generated._
+_Last updated: June 2026 · Curated by a working solo builder, not auto-generated._
 
 💸 **On a budget?** See the [Free Solo AI Stack](free-solo-ai-stack.md) — only tools with real free tiers or open-source licenses, enough to launch for $0.
 
@@ -105,7 +105,6 @@ Text-to-video and image-to-video — the tools creators use for shorts, ads, and
 - [Google Veo](https://deepmind.google/models/veo/) — Google's flagship text-to-video with audio, via Gemini API. 🔌
 - [OpenAI Sora](https://sora.com) — OpenAI's text-to-video model and app. 🔌
 - [Luma Dream Machine](https://lumalabs.ai/dream-machine) — fast, fluid image-to-video and keyframes. 🔌
-- [Magic Hour](https://magichour.ai) — create and edit video, images, and audio with AI. 🔌 🆓
 - [Pika](https://pika.art) — creator-friendly video gen with effects and editing. 🔌
 - [Hailuo / MiniMax](https://hailuoai.video) — high-quality cinematic video gen from text or image. 🔌
 - [Hedra](https://www.hedra.com) — character-driven video and expressive talking characters. 🔌
@@ -133,7 +132,6 @@ Spokesperson and presenter video from a script — no camera, no studio.
 - [ElevenLabs](https://elevenlabs.io) — market-leading TTS, voice cloning, and voice agents; 70+ languages. 🔌 🧩 🆓
 - [Cartesia](https://cartesia.ai) — lowest-latency realtime TTS (~90ms) with 3-second voice cloning. 🔌 🧩
 - [Fish Audio](https://fish.audio) — open-source TTS and voice cloning, ~80% cheaper than ElevenLabs. 🔌 🔓
-- [Piper](https://github.com/OHF-Voice/piper1-gpl) — fast local neural TTS with CLI, Python, C/C++, and HTTP interfaces; runs offline. Voice-model licenses vary. 🆓 🔓
 - [Hume](https://hume.ai) — emotion-aware voice (EVI) and expressive Octave TTS. 🔌
 - [Rime](https://rime.ai) — developer/enterprise TTS with sub-200ms latency. 🔌
 - [Resemble AI](https://resemble.ai) — enterprise voice cloning plus deepfake detection. 🔌 🧩
@@ -158,14 +156,11 @@ Spokesperson and presenter video from a script — no camera, no studio.
 - [Recraft](https://recraft.ai) — vector/SVG and brand-asset specialist. 🔌 🧩
 - [Reve](https://reve.com) — strong prompt adherence, typography, and aesthetics. 🔌
 - [Krea](https://krea.ai) — real-time canvas and a hub for Flux/Imagen/Ideogram/Nano Banana. 🔌
-- [UpRes](https://upres.ai) — AI image & video upscaling (2x–8x) across 14 specialist models with REST API, CLI, and MCP server; free web tier gives 5 watermarked image upscales/month. 🔌 🧩 🆓
 
 ## MCP Servers
 
 Model Context Protocol servers let your agent *do things*, not just chat. These are the ones a solo builder wires into Claude Code. **→ Full pages in [`mcp/`](mcp/).**
 
-- [Agent QA](mcp/agent-qa.md) — run natural-language web/mobile tests with persistent test memory and self-healing flows. 🧩 🆓
-- [API.market MCP Gateway](https://api.market/api/mcp/gateway) — proprietary hosted gateway to discover and call APIs for generation, search, scraping, maps and data; OAuth or API key, with pricing and free tiers varying by API. 🧩
 - [HeyGen MCP](mcp/heygen.md) — generate avatar videos, clone voices, and create speech from your agent. 🧩
 - [ElevenLabs MCP](mcp/elevenlabs.md) — TTS, voice cloning, dubbing, and SFX as agent tools. 🧩 🔓
 - [Cartesia MCP](mcp/cartesia.md) — low-latency realtime speech generation for agents. 🧩 🔓
@@ -181,7 +176,6 @@ Model Context Protocol servers let your agent *do things*, not just chat. These 
 - [Notion MCP](mcp/notion-mcp.md) — read/write Notion docs and databases as an agent tool. 🧩
 - [Browserbase MCP](mcp/browserbase.md) — cloud browser for clicks, form fills, and screenshots when scraping isn't enough. 🧩
 - [Sequential Thinking MCP](mcp/sequential-thinking.md) — externalises step-by-step reasoning; #1 by usage on Smithery. 🔓
-- [Invompt](https://invompt.com) — drafts invoices and quotes from Claude, ChatGPT, or Cursor. You review each document before it is sent. Guest use needs no account. 🧩 🆓
 
 **More MCP servers:** [docs, search, data, email, and deploy servers worth wiring up in 2026](mcp/trending-2026.md).
 
@@ -192,7 +186,6 @@ Model Context Protocol servers let your agent *do things*, not just chat. These 
 A **Claude skill** is a reusable `.claude/skills` folder (markdown + scripts) that teaches Claude Code a repeatable workflow you can invoke by name. These are the trending ones solo builders install in 2026. **→ Full pages in [`skills/`](skills/).**
 
 ### Design & frontend
-- [mblode/agent-skills](https://github.com/mblode/agent-skills) — Open-source collection of agent skills for UI audits, typography, documentation, PR review, and releases; installable with the skills CLI. 🔓
 - [ui-ux-pro-max](skills/ui-ux-pro-max.md) — design-intelligence skill: 50+ styles, 161 palettes, 57 font pairings, picks a coherent design system from one prompt. 🔓
 - [frontend-design](skills/frontend-design.md) — Anthropic's official skill that bans generic fonts and forces a deliberate aesthetic, killing AI-slop UI. 🔓
 - [scroll-world](https://github.com/oso95/scroll-world) — agent skill that turns any brand into a scrollable 3D world: continuous scroll-driven camera fly-throughs, no cuts. 🔓
@@ -223,23 +216,15 @@ Give your agent a persistent brain beyond the codebase. **→ Full pages in [`me
 
 - [GBrain](memory/gbrain.md) — synthesis + graph + gap-analysis brain by Garry Tan (YC CEO); wire into Claude Code in one command. 🔓
 - [Context7](skills/context7.md) — keeps the agent's library docs current. 🧩 🔓
-- [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness) - Developer-alpha encrypted, append-only knowledge store with a Rust CLI and scoped, expiring MCP access. 🧩 🔓
 - [Mem0](https://github.com/mem0ai/mem0) — open-source memory layer for AI agents and apps. 🔓
-- [Mnemoverse](https://mnemoverse.com) — hosted memory engine for AI agents, reached over MCP; tell it a recalled memory helped or misled, and it re-ranks what comes back next. 🔌 🧩 🆓
-- [Screenpipe](https://screenpipe.com): Search locally captured screen text and audio transcripts for work recall and meeting notes via MCP or a local API; source-available under the Screenpipe Commercial License, with configured cloud services able to receive context. 🔌 🧩
 
 ## AI Coding Agents
 
 - [Claude Code](https://claude.com/claude-code) — Anthropic's terminal/IDE coding agent; the hub of this stack. 🧩
-- [NextReset](https://nextreset.ai/) — tracks source-linked Codex reset history and experimental forecasts, with a browser-local countdown timer. 🆓
 - [Cursor](https://cursor.com) — the AI-native IDE. 🧩
 - [Windsurf](https://windsurf.com) — agentic IDE with deep codebase awareness.
 - [Cline](https://github.com/cline/cline) — open-source autonomous coding agent for VS Code. 🔓
 - [Aider](https://aider.chat) — AI pair programming in your terminal. 🔓
-- [YYLO](https://github.com/yylo-dev/yylo) — command-line orchestrator for coding agents with typed task, validation, merge, and release-readiness boundaries; each task runs in a dedicated branch/worktree behind a risk-based merge queue. 🔓 🆓
-- [5dive](https://github.com/5dive-ai/5dive) — runs a team of AI agents on your own server. you hand them work from telegram. 🔓 🆓
-- [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) — records a coding-agent run beneath the harness, then replays it offline from the recorded bytes with no model called, or re-runs it from a chosen step on a different model. 🧩 🆓 🔓
-- [Orbi](https://github.com/orbi-build/orbi) — self-hosted coding agent for GitHub repos: label an issue `ai-ready` and it writes the code, opens a PR, has an independent review session check it against the issue's acceptance criteria, merges, and tags a release. 🔓 🆓
 
 ## Automation & Agent Frameworks
 
@@ -250,7 +235,6 @@ Give your agent a persistent brain beyond the codebase. **→ Full pages in [`me
 - [LangGraph](https://github.com/langchain-ai/langgraph) — stateful, controllable agent orchestration. 🔓
 - [Mastra](https://mastra.ai) — TypeScript agent framework with workflows and memory. 🔓
 - [CrewAI](https://crewai.com) — role-based multi-agent orchestration. 🔓
-- [Frameworks for building fast](tools/frameworks-for-building.md) — web, full-stack, mobile, desktop, and AI SDK choices for solo products.
 - [Agent Voice Response](https://github.com/agentvoiceresponse) — open-source platform to build and deploy AI voice agents (phone bots) wiring ASR + LLM + TTS. 🔓
 
 ## Frontend Motion & Design
@@ -276,14 +260,10 @@ The plumbing a solo builder needs to ship and run an AI product — picked for t
 - [Convex](https://convex.dev) — reactive backend with first-class AI agent and workflow support. 🔌
 - [Clerk](https://clerk.com) — drop-in auth so you skip building login. 🔌
 - [tgx](https://github.com/yerdaulet-damir/tgx) — TypeScript framework for building Telegram bots fast on grammY; state, Stars payments and menus built in, and designed to be built by AI agents (ships an MCP server). 🔓
-- [Gemmein](https://gemmein.com/r/dir) — backend for web and mobile apps: sign-in, protected data, payments and AI tools, with security on by default. 🔌
 
 ## Distribution & Marketing
 
 Building is half the job — this is how a solo builder gets users. **Where to launch, how to grow, and the tactics that work** — see the [launch playbook](playbooks/launch-and-get-first-users.md).
-
-**Research what to build**
-- [IdeaHunter](https://ideahunter.today) — turns public buyer pain and market signals into scoped app ideas with source evidence, MVP boundaries, and a validation step. 🆓
 
 **Where to launch**
 - [Product Hunt](https://producthunt.com) — the classic launch-day spike for tools and SaaS.
@@ -291,28 +271,17 @@ Building is half the job — this is how a solo builder gets users. **Where to l
 - [Reddit](https://reddit.com) — niche subs (r/SideProject, r/indiehackers) — and the #1 source AI engines cite.
 - [Indie Hackers](https://indiehackers.com) — community of solo founders sharing what works.
 - [Peerlist](https://peerlist.io) — launchpad and network for builders.
-- [startup-directories](https://github.com/saidbouig/startup-directories) — 214 startup and launch directories with what the free route gives, the measured link type and the date checked. 🆓 🔓
 
 **Grow & post**
 - [Marketing, SEO, and social from Claude Code](distribution/marketing-from-claude.md), the growth skills and MCP servers a solo builder runs straight from the terminal.
 - [Social media automation, human in the loop](distribution/social-media-automation.md), self-hosted schedulers and cross-posting for X, LinkedIn, Reddit, and Threads (Postiz, Mixpost, praw, xMCP).
 - [Typefully](https://typefully.com) — write, schedule, and grow on X/Threads.
 - [Buffer](https://buffer.com) — schedule across every social channel.
-- [LaunchGrill](https://launchgrill.com) — scores a landing page 0–100 against a published 18-test checklist, quoting the page for each finding. 🆓
-- [SocialEcho](https://www.socialecho.net) — publish, monitor, analyze, and manage messages across eleven social platforms from one workspace. 🆓
-- [Autoposting](https://autoposting.ai) — write in your own voice, clip long video, and schedule to X, LinkedIn, Instagram, Threads and YouTube.
-- [BulkPublish social media content skills](https://github.com/azeemkafridi/bulkpublish-api/tree/main/skills/social-media-content-skills) — reusable, agent-agnostic skills for planning, adapting, reviewing, scheduling, and publishing social content through the [BulkPublish API](https://github.com/azeemkafridi/bulkpublish-api), with [MCP documentation](https://app.bulkpublish.com/docs). 🔌 🧩 🔓
 - [claude-seo](skills/claude-seo.md) — SEO + GEO so search and AI engines surface you. 🔓
-- [LLM Pulse](https://llmpulse.ai/) — tracks brand mentions, citations, sentiment, and competitor share of voice across AI search engines. 🔌 🧩
-- [Robot Speed](https://www.robot-speed.com/mcp) — hosted SEO and AI-visibility MCP. OAuth endpoint has 39 tools; `/api/mcp/free` is no-auth and has 12. 🔌 🧩 🆓 🔓
-- [LogNorm](https://lognorm.com) — hosted MCP server that gives Claude Code, Codex and Cursor a ranked backlog of SEO and AI-visibility fixes, content and research for your site; OAuth, no API keys. Free plan, paid from $99/mo. 🧩 🆓
 - [SEO and GEO tools](distribution/seo-geo-tools.md), skills and MCP servers to rank in Google and get cited by ChatGPT and Perplexity.
 
 **Make the content**
 - [Faceless content factory](playbooks/faceless-content-factory.md) — turn the [video](#video-generation), [voice](#voice-tts--cloning), and [avatar](#ai-avatars--talking-heads) tools above into a posting machine.
-- [shortshort](https://www.shortshort.io) — turns long videos into vertical clips with face tracking and word-by-word captions; includes a limited free AI trial.
-- [ScaleReach](https://www.scalereach.ai) - turns long videos into vertical 9:16 clips with AI captions and face-tracking crop, and schedules them to social accounts. 🔌 🧩
-- [kdpbook.io](https://kdpbook.io) — describe a book in a chat and get the Amazon KDP files: print PDF, full-wrap cover, Kindle EPUB and listing sheet; includes 2,000 free credits at signup (free-plan exports are watermarked).
 
 ---
 
